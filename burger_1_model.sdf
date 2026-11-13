@@ -138,7 +138,7 @@
         <pose>-0.032 0 0.171 0 0 0</pose>
         <update_rate>5</update_rate>
         <topic>burger_1/scan</topic>
-        <gz_frame_id>base_scan</gz_frame_id>
+        <gz_frame_id>burger_1/base_scan</gz_frame_id>
         <lidar>
           <scan>
             <horizontal>
@@ -389,8 +389,8 @@
       <topic>burger_1/cmd_vel</topic>
 
       <odom_topic>burger_1/odom</odom_topic>
-      <frame_id>odom</frame_id>
-      <child_frame_id>base_footprint</child_frame_id>
+      <frame_id>burger_1/odom</frame_id>
+      <child_frame_id>burger_1/base_footprint</child_frame_id>
       <odom_publisher_frequency>30</odom_publisher_frequency>
 
       <tf_topic>burger_1/tf</tf_topic>
