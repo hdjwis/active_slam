@@ -1,4 +1,4 @@
- Authors: Abdulkadir Ture
+#Authors: Abdulkadir Ture
 # Github : abdulkadrtr
 
 import rclpy
@@ -49,18 +49,18 @@ class MergeMapNode(Node):
         self.map2 = None
 
     def map1_callback(self, msg):
-    	msg.info.origin.position.x
-    	msg.info.origin.position.y
-        self.map1 = msg
-        if self.map2 is not None:
-            msg = merge_maps(self.map1, self.map2)
+    		msg.info.origin.position.x
+    		msg.info.origin.position.y
+      	self.map1 = msg
+        	if self.map2 is not None:
+         	msg = merge_maps(self.map1, self.map2)
             self.publisher.publish(msg)
     
     def map2_callback(self, msg):
-    	msg.info.origin.position.x
-    	msg.info.origin.position.y
-        self.map2 = msg
-        if self.map1 is not None:
+    		msg.info.origin.position.x
+    		msg.info.origin.position.y
+        	self.map2 = msg
+        	if self.map1 is not None:
             msg = merge_maps(self.map1, self.map2)
             self.publisher.publish(msg)
 
