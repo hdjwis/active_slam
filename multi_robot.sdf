@@ -56,7 +56,7 @@
     <include>
       <uri>burger_2_model.sdf</uri>
       <name>burger_2</name>
-      <pose>-2.0142317230121347 -0.999999999690049 0.010008796970744055 -6.8090652376058914e-09 -0.012459596355637351 -2.77729888704643e-08</pose>
+      <pose>-2.0142317230121347 0.499999999690049 0.010008796970744055 -6.8090652376058914e-09 -0.012459596355637351 -2.77729888704643e-08</pose>
       <plugin filename="gz-sim-diff-drive-system" name="gz::sim::systems::DiffDrive">
         <topic>/burger_2/cmd_vel</topic>
         <odom_topic>/burger_2/odom</odom_topic>

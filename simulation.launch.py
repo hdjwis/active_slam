@@ -24,7 +24,7 @@ def generate_launch_description():
 
     # Added '-s' for headless server mode over SSH
     gz_sim = ExecuteProcess(
-        cmd=['gz', 'sim', '-r', 'multi_robot.sdf'],
+        cmd=['gz', 'sim', '-r', 'new_multi_robot.sdf'],
         output='screen',
     )
 
